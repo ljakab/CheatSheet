@@ -61,9 +61,8 @@ Undo changes (not a good idea with shared repos)
 
 ... and if there is work to keep
 
-git stash
-
-git reset --hard <commit>
+    git stash
+    git reset --hard <commit>
     git stash pop
 
 Branching
