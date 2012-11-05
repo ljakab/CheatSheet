@@ -1,0 +1,22 @@
+Allow Ctrl-C passthrough to the process being debugged:
+handle SIGINT pass
+
+Show all handles
+info handle
+
+Print IPv4 value:
+p (char*)inet_ntoa(&my_ip4_addr)
+
+Print IPv6 value:
+p (void*)malloc(64)
+p (char*)inet_ntop(10,&my_ip6_addr,$1,64)
+
+Force printing in hexadecimal (some other printf() formatters can be used as
+well):
+p/x
+
+Continue till the end of function:
+finish
+
+Print type of variable or struct:
+ptype struct sockaddr_in
