@@ -20,3 +20,6 @@ finish
 
 Print type of variable or struct:
 ptype struct sockaddr_in
+
+
+''See also:'' [http://beej.us/guide/bggdb/](Beej's Quick Guide to GDB)
