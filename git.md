@@ -99,3 +99,11 @@ Check if a patch applies well
 Clean trailing whitespace
 
     git diff | git apply --whitespace=fix -
+
+Push to all remotes with one command
+
+    git remote add all origin-host:path/proj.git
+    git remote set-url --add all another-host:path/proj.git
+    git remote set-url --add all third-host:path/proj.git
+
+    git push all --all
