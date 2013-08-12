@@ -1,5 +1,5 @@
-The below "recipes" have been tested on Fedora 18 only, they may or may not
-work on other versions.
+The below "recipes" have been tested on Fedora 18 and 19 only, they may or may
+not work on other versions.
 
 Replace NetworkManager with classic networking
 ----------------------------------------------
@@ -59,3 +59,4 @@ Some additional packages, not included in the above, that you may want/need
 for development:
   * cmake
   * clang-analyzer
+  * wireshark
