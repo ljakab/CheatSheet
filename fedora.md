@@ -28,7 +28,8 @@ following names (if you want to edit manually):
 Enable OpenSSH server
 ---------------------
 
-The OpenSSH server is installed, but not enabled by default. To start on boot:
+The OpenSSH server (openssh-server) is installed, but not enabled by default.
+To start on boot:
 
     systemctl enable sshd.service
     systemctl start sshd.service
