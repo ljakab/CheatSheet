@@ -63,6 +63,19 @@ for development:
   * wireshark
 
 
+Run commands at startup
+-----------------------
+
+There is no `rc.local` file by default in Fedora 18 and above.  In order to
+run some extra commands at startup, you need to create `/etc/rc.d/rc.local`,
+make it executable, and enable the `rc-local` service.  Note that the
+`rc.local` file is a shell script that must end with `exit 0`.
+
+    vim /etc/rc.d/rc.local
+    chmod +x /etc/rc.d/rc.local
+    systemctl start rc-local
+
+
 Install VMware Tools on Fedora 19
 ---------------------------------
 
