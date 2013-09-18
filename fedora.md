@@ -114,3 +114,10 @@ installer to run vmware-config-tools.pl.
 
 Hope that helps - having to copy the `version.h` file is the biggest thing
 that will trip up experienced VMware users.
+
+
+Allow core dumps when abort() is called
+---------------------------------------
+
+Set `ProcessUnpackaged = yes` in
+`/etc/abrt/abrt-action-save-package-data.conf`
