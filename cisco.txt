@@ -25,6 +25,12 @@ Release or renew DHCP address:
     renew dhcp ethernet 0/0
 
 
+Show Date/Time
+==============
+
+    show clock [detail]
+
+
 Access Point upgrade
 ====================
 
