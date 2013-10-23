@@ -1,0 +1,73 @@
+DHCP
+====
+
+Server
+------
+
+Show current bindings:
+
+    show ip dhcp binding
+
+Delete binding(s):
+
+    clear ip dhcp binding {address|*}
+
+Determine fields sent by clients:
+
+     debug ip dhcp server packet
+
+Client
+------
+
+Release or renew DHCP address:
+
+    release dhcp ethernet 0/0
+    renew dhcp ethernet 0/0
+
+
+Access Point upgrade
+====================
+
+Note: access points can operate in autonomous or unified modes, with the
+latter they need centralized control. Autonomous images have k9w7 in their
+name, while LWAPP images have k9w8.
+
+    archive download-sw /leave-old-sw /reload tftp://10.10.10.3/ap801-k9w7-tar.152-2.JB
+
+Once the new version is tested, the old version can be deleted:
+
+    delete /force /recursive flash:ap801-k9w7-mx.124-21a.JA1
+
+
+Access Point recovery from bootloader
+=====================================
+
+1. Enter bootloader mode from the main router
+
+    service-module wlan-ap 0 reset bootloader
+
+
+2. Enter AP
+
+    service-module wlan-ap 0 session
+
+3. Configure an IP address in bootloader mode and init TFTP subsystem
+
+    set IP_ADDR 10.10.10.2
+    set NETMASK 255.255.255.248
+    set DEFAULT_ROUTER 10.10.10.1
+    tftp_init
+
+4. Get and extract a tar image from a TFTP server
+
+    tar -xtract tftp://10.10.10.3/ap801-k9w7-tar.152-2.JB flash:
+
+
+5. Set the new image as the boot image check variables and boot
+
+    set BOOT flash:ap801-k9w7-mx.152-2.JB/ap801-k9w7-mx.152-2.JB
+    set
+    boot
+
+6. If the configuration gets wiped out, default username/password/enable are
+   all Cisco.
