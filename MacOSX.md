@@ -12,3 +12,9 @@ page and right click on UDID). On macbook run "rvictl -s <udid>". You now have
 a rvi0 device on your macbook on which you can snoop and see all network
 traffic of iphone/ipad (wireless/cellular). End with rvictl -x <udid>. Have
 fun :-)</udid></udid>
+
+
+Start Eclipse with Java 7
+
+    sudo mkdir /System/Library/Java/JavaVirtualMachines
+    sudo ln -s /Library/Java/JavaVirtualMachines/1.7.0.jdk /System/Library/Java/JavaVirtualMachines/1.6.0.jdk
