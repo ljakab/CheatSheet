@@ -35,6 +35,14 @@ To start on boot:
     systemctl start sshd.service
 
 
+Disable automatic updates
+-------------------------
+
+Start the **Software** application, and chose "Software Sources".  In the
+"Update Settings" there is an option called "Check for updates" which can be
+set to never.
+
+
 Install `build-essential' equivalent
 ------------------------------------
 
