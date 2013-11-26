@@ -51,8 +51,8 @@ To check the current status of SELinux on your host run `sestatus` or
 `/etc/selinux/config` and rebooting.
 
 
-Install `build-essential' equivalent
-------------------------------------
+Install Debian's "build-essential" equivalent
+---------------------------------------------
 
 For the very basics, you can install the following packages:
   * make
