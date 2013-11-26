@@ -43,6 +43,13 @@ Start the **Software** application, and chose "Software Sources".  In the
 set to never.
 
 
+Disable SElinux
+---------------
+
+Edit `/etc/selinux/config` and change the value of `SELINUX` to `disabled`.
+Reboot.
+
+
 Install `build-essential' equivalent
 ------------------------------------
 
