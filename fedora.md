@@ -43,11 +43,12 @@ Start the **Software** application, and chose "Software Sources".  In the
 set to never.
 
 
-Disable SElinux
----------------
+SElinux
+-------
 
-Edit `/etc/selinux/config` and change the value of `SELINUX` to `disabled`.
-Reboot.
+To check the current status of SELinux on your host run `sestatus` or
+`getenforce`.  You can change the policy by editing the `SELINUX` variable in
+`/etc/selinux/config` and rebooting.
 
 
 Install `build-essential' equivalent
