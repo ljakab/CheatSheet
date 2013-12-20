@@ -137,3 +137,25 @@ Allow core dumps when abort() is called
 
 Set `ProcessUnpackaged = yes` in
 `/etc/abrt/abrt-action-save-package-data.conf`
+
+
+Fully disable IPv6
+------------------
+
+Some times you just want to figure out if an issue is protocol family related.
+Preivously IPv6 was compiled as a kernel module, and by blacklisting it or
+simply removing it disabled the protocol.  Now it is compiled into the kernel,
+and it can be disabled by setting the `ipv6.disable` option to 1.  Edit
+`/etc/default/grub` and find the line containing `GRUB_CMDLINE_LINUX`.  Add
+`ipv6.disable=1` to the rest of the boot options.  Then update the Grub 2
+configuration, by running:
+
+    grub2-mkconfig -o /boot/grub2/grub.cfg
+
+Some tutorials suggest turning IPv6 off using `sysctl`:
+
+    net.ipv6.conf.all.disable_ipv6=1
+    net.ipv6.conf.default.disable_ipv6=1
+
+However, this still allows the interfaces to get the default link-local
+addresses, and so it doesn't completely disable IPv6.
