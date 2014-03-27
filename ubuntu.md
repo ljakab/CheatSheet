@@ -52,3 +52,26 @@ Fix problems due to persistent interface naming
 -----------------------------------------------
 
 Edit `/etc/udev/rules.d/70-persistent-net.rules
+
+
+Build a custom kernel "the Debian way"
+--------------------------------------
+
+    apt-get install kernel-package fakeroot
+    tar xvf linux-x.y.z.tar.xz
+    cd linux-x.y.z
+    make menuconfig
+    scripts/config --disable DEBUG_INFO
+
+Disabling `DEBUG_INFO` significantly decreases disk space requirements for the
+build.
+
+Two options to actually build the .deb packages:
+
+    make-kpkg clean
+    fakeroot make-kpkg --initrd --revision=1 kernel_image kernel_headers
+
+or
+
+    make clean
+    make deb-pkg
