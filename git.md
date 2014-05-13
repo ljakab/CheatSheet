@@ -107,3 +107,9 @@ Push to all remotes with one command
     git remote set-url --add all third-host:path/proj.git
 
     git push all --all
+
+Change date of previous commits
+
+    git rebase -i master
+    git commit --amend --date=`date`
+    git rebase --continue
