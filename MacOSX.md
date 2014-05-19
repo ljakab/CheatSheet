@@ -19,7 +19,8 @@ Start Eclipse with Java 7
     sudo mkdir /System/Library/Java/JavaVirtualMachines
     sudo ln -s /Library/Java/JavaVirtualMachines/1.7.0.jdk /System/Library/Java/JavaVirtualMachines/1.6.0.jdk
 
-Remap <Home> and <End> keys
+
+Remap <Home> and <End> keys for native apps
 
 Create the `~/Library/KeyBindings/DefaultKeyBinding.dict` file with the
 following content:
@@ -34,3 +35,9 @@ following content:
 You need to reopen applications for changes to take effect.  Xcode, Terminal,
 and many cross-platform applications ingnore `Xcode, Terminal, and many
 cross-platform applications ignore `DefaultKeyBinding.dict`.
+
+
+Remap <Home and <End> keys in Eclipse
+
+Preferences->General->Keys, filter for "line start" and "line end" and change
+binding.
