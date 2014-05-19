@@ -18,3 +18,19 @@ Start Eclipse with Java 7
 
     sudo mkdir /System/Library/Java/JavaVirtualMachines
     sudo ln -s /Library/Java/JavaVirtualMachines/1.7.0.jdk /System/Library/Java/JavaVirtualMachines/1.6.0.jdk
+
+Remap <Home> and <End> keys
+
+Create the `~/Library/KeyBindings/DefaultKeyBinding.dict` file with the
+following content:
+
+    {
+        "\UF729"  = moveToBeginningOfParagraph:; // home
+        "\UF72B"  = moveToEndOfParagraph:; // end
+        "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home
+        "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end
+    }
+
+You need to reopen applications for changes to take effect.  Xcode, Terminal,
+and many cross-platform applications ingnore `Xcode, Terminal, and many
+cross-platform applications ignore `DefaultKeyBinding.dict`.
