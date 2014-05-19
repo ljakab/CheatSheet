@@ -41,3 +41,8 @@ Remap <Home and <End> keys in Eclipse
 
 Preferences->General->Keys, filter for "line start" and "line end" and change
 binding.
+
+
+Remap <Home and <End> keys in Firefox/Thunderbird
+
+Use the Keyfixer addon
