@@ -75,3 +75,39 @@ or
 
     make clean
     make deb-pkg
+
+
+I typically install the following packages on a base (server) install
+---------------------------------------------------------------------
+
+System utilities:
+
+  * openssh-server
+  * ntp
+  * tshark (or wireshark if there is are X libraries installed)
+  * traceroute
+  * elinks/lynx
+  * fish
+  * htop
+
+Generic development tools:
+
+  * build-essential
+  * autoconf
+  * libtool
+  * clang
+  * git
+  * subversion
+  * cscope
+  * pkg-config
+  * bison
+  * flex
+
+Build dependencies of more than one package I typically install from source:
+
+  * libssl-dev
+
+Build dependencies for LISPmob:
+
+  * libconfuse-dev
+  * gengetopt
