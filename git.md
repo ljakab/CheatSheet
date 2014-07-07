@@ -113,3 +113,7 @@ Change date of previous commits
     git rebase -i master
     git commit --amend --date=`date`
     git rebase --continue
+
+Show TABs in indent as errors with git diff --check
+
+    git -c core.whitespace=tab-in-indent diff master --check
