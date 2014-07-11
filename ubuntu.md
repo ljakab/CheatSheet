@@ -41,6 +41,10 @@ Disable upstart job
 
 Edit /etc/init/service.conf
 
+Or
+
+Create /etc/init/service.override, and put "manual" inside.
+
 
 Disable Debian style job
 ------------------------
