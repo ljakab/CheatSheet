@@ -46,3 +46,8 @@ binding.
 Remap <Home and <End> keys in Firefox/Thunderbird
 
 Use the Keyfixer addon
+
+
+List IPv4 open ports
+
+    lsof -nP -i4 | grep LISTEN
