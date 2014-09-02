@@ -81,6 +81,12 @@ or
     make deb-pkg
 
 
+Add PPA
+-------
+
+    sudo add-apt-repository <PPA>
+
+
 I typically install the following packages on a base (server) install
 ---------------------------------------------------------------------
 
@@ -106,6 +112,8 @@ Generic development tools:
   * pkg-config
   * bison
   * flex
+  * oracle-java7-installer (ppa:webupd8team/java)
+  * maven
 
 Build dependencies of more than one package I typically install from source:
 
