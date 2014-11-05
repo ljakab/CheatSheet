@@ -50,6 +50,9 @@ To check the current status of SELinux on your host run `sestatus` or
 `getenforce`.  You can change the policy by editing the `SELINUX` variable in
 `/etc/selinux/config` and rebooting.
 
+    setenforce 0
+    sed -i -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
+
 
 Install Debian's "build-essential" equivalent
 ---------------------------------------------
