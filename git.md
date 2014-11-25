@@ -117,3 +117,8 @@ Change date of previous commits
 Show TABs in indent as errors with git diff --check
 
     git -c core.whitespace=tab-in-indent diff master --check
+
+Merge branch, with "theirs" strategy
+
+    git checkout target
+    git merge -X theirs source
