@@ -82,6 +82,12 @@ for development:
   * wireshark
 
 
+Find out which package contains a certain command
+-------------------------------------------------
+
+    yum provides <command>
+
+
 Run commands at startup
 -----------------------
 
