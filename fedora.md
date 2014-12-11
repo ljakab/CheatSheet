@@ -35,6 +35,13 @@ To start on boot:
     systemctl start sshd.service
 
 
+Disable firewall
+----------------
+
+    systemctl stop firewalld.service
+    systemctl disable firewalld.service
+
+
 Disable automatic updates
 -------------------------
 
