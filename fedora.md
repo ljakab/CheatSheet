@@ -95,6 +95,22 @@ Find out which package contains a certain command
     yum provides <command>
 
 
+Enable git-prompt
+-----------------
+
+Add this to `~/.bash_profile`:
+
+    # Show git branch and state in prompt
+    export PS1='[\u@\h \W$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")]\$ '
+    export GIT_PS1_SHOWDIRTYSTATE=yes
+    export GIT_PS1_SHOWSTASHSTATE=yes
+    export GIT_PS1_SHOWUNTRACKEDFILES=yes
+
+If you don't have bash completion active, add this to `~/.bashrc`:
+
+    source /usr/share/git-core/contrib/completion/git-prompt.sh
+
+
 Run commands at startup
 -----------------------
 
