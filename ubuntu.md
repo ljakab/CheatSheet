@@ -99,6 +99,7 @@ System utilities:
   * elinks/lynx
   * fish
   * htop
+  * iotop
 
 Generic development tools:
 
