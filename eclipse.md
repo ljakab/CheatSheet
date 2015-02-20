@@ -11,4 +11,4 @@ to .gitignore (unchecked)
 
 Java -> Code Style -> Formatter -> Import...
 
-(https://code.google.com/p/google-styleguide/source/browse/trunk/eclipse-java-google-style.xml)
+(https://google-styleguide.googlecode.com/svn/trunk/eclipse-java-google-style.xml)
