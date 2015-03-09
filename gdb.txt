@@ -27,6 +27,10 @@ thread apply all bt
 Switch frame in a backtrace (especially useful for examining core files)
 frame <frame #>
 
+Switch to n frames above and below respectively
+up <n>
+down <n>
+
 List local variables
 info locals
 
