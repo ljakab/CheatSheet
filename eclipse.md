@@ -24,3 +24,7 @@ to .gitignore (unchecked)
 Java -> Code Style -> Formatter -> Import...
 
 (https://git.opendaylight.org/gerrit/gitweb?p=odlparent.git;a=blob_plain;f=checkstyle/src/main/resources/odl_checks.xml)
+
+# Automatically add Signed-off-by: to Git commit messages
+
+Team -> Git -> Committing -> Insert Signed-off-by
