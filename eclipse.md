@@ -2,6 +2,10 @@
 
 General -> Editors -> Text Editors -> Show whitespace characters
 
+# Set indentation for XML files (like pom.xml)
+
+XML -> XML Files -> Editor
+
 # Avoid trailing whitespace
 
   * Java -> Editor -> Save Actions
