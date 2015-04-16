@@ -32,3 +32,9 @@ Java -> Code Style -> Formatter -> Import...
 # Automatically add Signed-off-by: to Git commit messages
 
 Team -> Git -> Committing -> Insert Signed-off-by
+
+# Change author name in Javadoc comments
+
+Either edit the template in Java -> Code Style -> Code Templates -> Comments -> Types
+
+or add `-Duser.name="nameToUseInComments"` to `eclipse.ini`
