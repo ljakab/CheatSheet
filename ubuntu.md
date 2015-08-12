@@ -96,6 +96,8 @@ System utilities:
   * ntp
   * tshark (or wireshark if there is are X libraries installed)
   * traceroute
+  * tcpreplay
+  * python-scapy
   * elinks/lynx
   * fish
   * htop
@@ -108,11 +110,17 @@ Generic development tools:
   * libtool
   * clang
   * git
+  * git-review
   * subversion
+  * cvs
+  * rcs
   * cscope
   * pkg-config
   * bison
   * flex
+  * debhelper
+  * dh-autoreconf
+  * dkms
   * oracle-java7-installer (ppa:webupd8team/java)
   * maven
 
@@ -123,4 +131,6 @@ Build dependencies of more than one package I typically install from source:
 Build dependencies for LISPmob:
 
   * libconfuse-dev
+  * libzmq3-dev
+  * libxml2-dev
   * gengetopt
