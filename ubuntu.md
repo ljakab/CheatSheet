@@ -134,3 +134,23 @@ Build dependencies for LISPmob:
   * libzmq3-dev
   * libxml2-dev
   * gengetopt
+
+Setting up proxies
+------------------
+
+APT specific: `/etc/apt/apt.conf`
+
+    Acquire::http::proxy "http://myproxy.server.com:8080/";
+    Acquire::ftp::proxy "ftp://myproxy.server.com:8080/";
+    Acquire::https::proxy "https://myproxy.server.com:8080/";
+
+Global: `/etc/environment`
+
+    http_proxy=http://myproxy.server.com:8080/
+    https_proxy=http://myproxy.server.com:8080/
+    ftp_proxy=http://myproxy.server.com:8080/
+    no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    HTTP_PROXY=http://myproxy.server.com:8080/
+    HTTPS_PROXY=http://myproxy.server.com:8080/
+    FTP_PROXY=http://myproxy.server.com:8080/
+    NO_PROXY="localhost,127.0.0.1,localaddress,.localdomain.com"
