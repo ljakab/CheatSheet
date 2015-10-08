@@ -122,3 +122,8 @@ Merge branch, with "theirs" strategy
 
     git checkout target
     git merge -X theirs source
+
+Configure git-review to use https instead of ssh
+
+    git config --global gitreview.scheme https
+    git config --global gitreview.port 443
