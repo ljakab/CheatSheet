@@ -1,3 +1,16 @@
+Add SSH public key for a user
+=============================
+
+    ip ssh pubkey-chain
+        username user
+            key-string
+                Copy the entire public key as appears in the cat id_rsa.pub including the ssh-rsa and username@hostname
+                Please note that some IOS versions will accept maximum 254 characters.
+                You can paste multiple lines.
+            exit
+        exit
+    exit
+
 DHCP
 ====
 
