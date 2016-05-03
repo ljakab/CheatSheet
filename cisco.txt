@@ -1,5 +1,16 @@
+SSH
+===
+
+Check if SSH is enabled
+
+    show ip ssh
+
+If not enables, generating a crypto key could help
+
+    crypto key generate rsa
+
 Add SSH public key for a user
-=============================
+-----------------------------
 
     ip ssh pubkey-chain
         username user
