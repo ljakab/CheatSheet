@@ -55,7 +55,7 @@ Use either rcconf, sysv-rc-conf, or update-rc.d
 Fix problems due to persistent interface naming
 -----------------------------------------------
 
-Edit `/etc/udev/rules.d/70-persistent-net.rules
+Edit `/etc/udev/rules.d/70-persistent-net.rules`
 
 
 Build a custom kernel "the Debian way"
