@@ -23,7 +23,7 @@ VM template customization
    apt-get install oracle-java7-installer && \
    apt-get install oracle-java8-installer
  * update-alternatives --config java
- * mkdir opt && cd opt && wget http://mirrors.gigenet.com/apache/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.tar.gz ...
+ * mkdir opt && cd opt && wget http://mirrors.gigenet.com/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz ...
  * install the ODL controller into opt
  * install the yourkit profiler into opt
  * git clone into src: lig, lispmob, ovs, opendaylight/lispflowmapping,
