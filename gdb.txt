@@ -1,6 +1,9 @@
 Allow Ctrl-C passthrough to the process being debugged:
 handle SIGINT pass
 
+Ignore SIG35
+handle SIG35 noprint nostop
+
 Show all handles
 info handle
 
