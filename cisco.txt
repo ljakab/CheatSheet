@@ -9,6 +9,10 @@ If not enables, generating a crypto key could help
 
     crypto key generate rsa
 
+It may be necessary to add a domain name first
+
+    ip domain name example.com
+
 Add SSH public key for a user
 -----------------------------
 
