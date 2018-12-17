@@ -1,3 +1,10 @@
+Miscellaneous
+=============
+
+Netstat-like output of listening ports
+
+    show ip ports all
+
 SSH
 ===
 
