@@ -51,3 +51,7 @@ Use the Keyfixer addon
 List IPv4 open ports
 
     lsof -nP -i4 | grep LISTEN
+
+DNS query using the macOS resolver
+
+    dns-sd -G v4v6 www.example.com
