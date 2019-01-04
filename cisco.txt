@@ -112,3 +112,31 @@ Access Point recovery from bootloader
 
 6. If the configuration gets wiped out, default username/password/enable are
    all Cisco.
+
+
+Static routes between VRFs
+==========================
+
+    ip vrf Example
+     rd 1:1
+     route-target 1:1
+    interface FastEthernet0/0
+     description Interface in a VRF
+     ip vrf forwarding Example
+     ip address 192.0.2.1 255.255.255.0
+     no shutdown
+    interface FastEthernet0/1
+     description Interface in a global table
+     ip address 199.99.9.1 255.255.255.0
+    ! This command adds a route into the VRF
+    ! that points to a route reachable via the global table
+    ip route vrf Example 223.255.255.0 255.255.255.0 199.99.9.2 global
+    ! This command adds a route into the global table
+    ! that points to a route reachable in the VRF Example
+    ip route 126.0.0.0 255.0.0.0 FastEthernet0/0 192.0.2.2
+
+This way, there is a route added to the VRF Example pointing to the network
+223.255.255.0/24 via the next hop 199.99.9.2 (somewhere behind the Fa0/1
+interface). Also, another route to 126.0.0.0/8 is added to the global routing
+table which is reachable via the next hop 199.0.2.2 somewhere behind the Fa0/0
+interface in the VRF Example.
