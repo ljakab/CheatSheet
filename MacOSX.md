@@ -26,10 +26,15 @@ Create the `~/Library/KeyBindings/DefaultKeyBinding.dict` file with the
 following content:
 
     {
-        "\UF729"  = moveToBeginningOfParagraph:; // home
-        "\UF72B"  = moveToEndOfParagraph:; // end
-        "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home
-        "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end
+        /* Remap Home / End keys to be correct */
+        "\UF729"   = "moveToBeginningOfLine:"; /* Home */
+        "\UF72B"   = "moveToEndOfLine:"; /* End */
+        "$\UF729"  = "moveToBeginningOfLineAndModifySelection:"; /* Shift + Home */
+        "$\UF72B"  = "moveToEndOfLineAndModifySelection:"; /* Shift + End */
+        "^\UF729"  = "moveToBeginningOfDocument:"; /* Ctrl + Home */
+        "^\UF72B"  = "moveToEndOfDocument:"; /* Ctrl + End */
+        "$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Ctrl + Home */
+        "$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; /* Shift + Ctrl + End */
     }
 
 You need to reopen applications for changes to take effect.  Xcode, Terminal,
