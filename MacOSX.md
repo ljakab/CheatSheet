@@ -1,3 +1,8 @@
+Check power settings from CLI
+
+    pmset -g
+
+
 Eject CD/DVD from CLI
 
     drutil eject
