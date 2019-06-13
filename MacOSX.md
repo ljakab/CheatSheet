@@ -65,3 +65,7 @@ List IPv4 open ports
 DNS query using the macOS resolver
 
     dns-sd -G v4v6 www.example.com
+
+Avoid DavMail using the dGPU all the time:
+
+    defaults write /Applications/DavMail.app/Contents/Info.plist NSSupportsAutomaticGraphicsSwitching -bool YES
