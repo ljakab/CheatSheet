@@ -69,3 +69,7 @@ DNS query using the macOS resolver
 Avoid DavMail using the dGPU all the time:
 
     defaults write /Applications/DavMail.app/Contents/Info.plist NSSupportsAutomaticGraphicsSwitching -bool YES
+
+Disable an installed JDK to be selected as default
+
+    mv $PATH_TO_JDK/Content/Info.plist $PATH_TO_JDK/Content/Info.plist.disabled
