@@ -77,3 +77,8 @@ Same for WebEx
 Disable an installed JDK to be selected as default
 
     mv $PATH_TO_JDK/Content/Info.plist $PATH_TO_JDK/Content/Info.plist.disabled
+
+Enable the AAC and/or aptX Bluetooth audio codecs:
+
+    defaults write bluetoothaudiod "Enable AptX codec" -bool true
+    defaults write bluetoothaudiod "Enable AAC codec" -bool true
