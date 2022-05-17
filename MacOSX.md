@@ -88,3 +88,7 @@ Enable the AAC and/or aptX Bluetooth audio codecs:
 
     defaults write bluetoothaudiod "Enable AptX codec" -bool true
     defaults write bluetoothaudiod "Enable AAC codec" -bool true
+
+Reset Touch Bar
+
+    sudo killall ControlStrip
