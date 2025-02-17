@@ -1,7 +1,8 @@
+**THIS COPY IS ARCHIVED. CONTENT MOVED TO OBSIDIAN**
+
 Install Rosetta on Apple Silicon
 
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
-
 
 
 Check power settings from CLI
